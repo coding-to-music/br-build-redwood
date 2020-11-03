@@ -19,7 +19,7 @@
   },
   "config" : { 
     "installDir" : "/home/connorstom/aprojects/redwoodblog4" 
-  },
+  }, 
   "keywords": [],
   "author": "Thomas Connors <connors.tom@gmail.com> (https://github.com/coding-to-music)",
   "license": "MIT",
