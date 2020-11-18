@@ -5,26 +5,35 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "all-site": "date && npm-run-all builda*",
-    "builda-1": "date && yarn create redwood-app $npm_package_config_installDir",
-    "builda-2": "date && cd $npm_package_config_installDir && sudo yarn rw g page home /",
-    "builda-3": "date && cd $npm_package_config_installDir && sudo yarn rw g page about",
-    "builda-4": "date && cd $npm_package_config_installDir && sudo yarn rw g layout blog",
-    "builda-5": "date && cd $npm_package_config_installDir && sudo yarn rw db save create posts",
-    "builda-6": "date && cd $npm_package_config_installDir && sudo yarn rw db up",
-    "buildxa-7": "date && cd $npm_package_config_installDir && sudo yarn rw g scaffold post",
-    "builda-8": "date && cd $npm_package_config_installDir && sudo yarn rw g cell BlogPosts",
-    "builda-9": "date && cd $npm_package_config_installDir && sudo yarn rw g page BlogPost",
-    "builda-10": "date && cd $npm_package_config_installDir && sudo yarn rw g cell BlogPost",
-    "builda-11": "date && cd $npm_package_config_installDir && sudo yarn rw g component BlogPost",
-    "builda-12": "date && cd $npm_package_config_installDir && sudo yarn rw g page contact",
-    "builda-13": "date && cd $npm_package_config_installDir && sudo yarn rw db save create contact",
-    "builda-14": "date && cd $npm_package_config_installDir && sudo yarn rw g sdl contact",
-    "builda-15": "date && cd $npm_package_config_installDir && sudo yarn rw g deploy netlify",
-    "builda-16": "date && cd $npm_package_config_installDir && sudo yarn rw g auth netlify"
+    "all-site": "npm-run-all builda*",
+    "builda-1": "yarn create redwood-app $npm_package_config_installDir",
+    "builda-2": "cd $npm_package_config_installDir && vue add tailwind",
+    "builda-3": "cd $npm_package_config_installDir && npm run serve",
+    "builda-4": "Delete HelloWorld.vue from /src/components/HelloWorld.vue",
+    "builda-5": "Delete About.vue from /src/views/About.vue",
+    "builda-6": "Edit /src/App.vue so it contains the following code",
+    "builda-7": "Edit /src/views/Home.vue so it contains the code below",
+    "builda-8": "Edit /src/router/index.js to contain the following code",
+    "builda-9": "Create a new file in /src/components/site/header/Header.vue", 
+    "builda-10": "You will have to create the folders site/header",
+    "builda-11": "In Header.vue add the following code.",
+    "builda-12": "Edit /src/App.vue",
+    "builda-13": "##validate the header is visible",
+    "builda-14": "/src/components/blog/BlogRoll.vue",
+    "builda-15": "/src/components/blog/LatestPosts.vue",
+    "builda-16": "/src/components/blog/Post.vue",
+    "builda-17": "Edit the file /src/views/Home.vue", 
+    "builda-18": "Edit /src/App.vue",
+    "builda-19": "Edit /src/router/index.js",
+    "builda-20": "##everything should be working",
+    "builda-21": "#Updating the App to use the Composition API",
+    "builda-22": "create a new file /src/composables/blog/posts.js",
+    "builda-23": "Edit /src/components/blog/BlogRoll.vue",
+    "builda-24": "Edit /src/components/blog/LatestPosts.vue", 
+    "builda-25": "Edit /src/components/blog/Post.vue"
   },
   "config" : { 
-    "installDir" : "/home/connorstom/aprojects/redwoodblog2" 
+    "installDir" : "/home/connorstom/aprojects/vue3_composable1" 
   }, 
   "keywords": [],
   "author": "Thomas Connors <connors.tom@gmail.com> (https://github.com/coding-to-music)",
@@ -37,3 +46,4 @@
     "npm-run-all": "^4.1.5"
   }
 }
+
