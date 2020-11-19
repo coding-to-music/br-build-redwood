@@ -10,4 +10,4 @@ run the script via
 $ yarn run all-site
 
 
-
+.
