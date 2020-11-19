@@ -44,6 +44,8 @@
   "author": "Thomas Connors <connors.tom@gmail.com> (https://github.com/coding-to-music)",
   "license": "MIT",
   "dependencies": {
+    "chalk": "^2.4.2",
+    "gently-copy": "^3.2.0",
     "live-server": "^1.2.1",
     "onchange": "^7.1.0"
   },
