@@ -3,7 +3,7 @@ README.md
 
 clone this directory
 
-npm init
+npm install
 
 run the script via 
 
