@@ -1,25 +1,12 @@
-{
-  "name": "br-build-site",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
     "js-add": "node add.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "all-site": "npm-run-all group0*",
-    "group0-part1-1.0": "rm -rf $npm_package_config_installDir",
-    "group0-part2-2.1": "cd .. && mkdir $npm_package_config_installDir",
-    "group0-part2-2.2": "cd $npm_package_config_installDir && go mod init $npm_package_config_repoName",
-    "group0-part3-3.1": "wget -nv -O $npm_package_config_installDir/server.go $npm_package_config_build3/hello-world.go.example",
-    "group0-part3-3.2": "cd $npm_package_config_installDir && pwd && ls -lat",
-    "group0-part3-3.3": "cd $npm_package_config_installDir && echo $npm_package_config_installDir",
-    "group0-part3-3.4": "wget -nv -O $npm_package_config_installDir/server.go $npm_package_config_raw3/server.go",
-
-    "groupx-part3-3.4": "mkdir -p $npm_package_config_installDir/src/",
-    "groupx-part3-3.4.1": "wget -nv -O $npm_package_config_installDir/src/BlogRoll.vue $npm_package_config_raw1/main/server.go",
-    "groupx-part3-3.4.3": "wget -nv -O $npm_package_config_installDir/Post.vue $npm_package_config_build5/src/components/blog/Post.vue",    
-    "groupx-part3-3.4.4": "cd $npm_package_config_installDir && go run $npm_package_config_installDir/server.go",
-
+    "all-site": "npm-run-all group1-part*",
+    "group1-part1-1.0": "rm -rf $npm_package_config_installDir",
+    "group1-part1-2.0": "cd .. && vue create $npm_package_config_appName",
+    "group1-part1-3.0": "cd $npm_package_config_installDir && vue add tailwind minimal",
+    "group1-part1-4.0": "echo you could do yarn serve and verify hello world is working",
+    "group1-part1-4.1": "echo you could halt here",
     "group1-part1-5.0": "rm -rf $npm_package_config_installDir/src/components/HelloWorld.vue",
     "group1-part1-6.0": "rm -rf $npm_package_config_installDir/src/views/About.vue",
     "group1-part2-1.0": "echo begin part 2",
@@ -61,36 +48,14 @@
     "group1-part5-7": "wget -nv -O  $npm_package_config_installDir/src/App.vue $npm_package_config_build1/src/App.vue"
   },
   "config": {
-    "build5Name": "otherVueApp",
-    "raw1": "https://raw.githubusercontent.com/coding-to-music/go-vue-thumbnail/",
-    "raw2": "https://raw.githubusercontent.com/coding-to-music/vue3_composition_api/blob/4c75c24553cc827a1e87f5004888452315e4281c",
-
-    "raw3": "https://raw.githubusercontent.com/coding-to-music/go-vue-thumbnail/e7eb02d8f2796819f4a4b4e08e8489793f8398d5",
-
-    "build5": "https://github.com/coding-to-music/vue3_composition_api/blob/4c75c24553cc827a1e87f5004888452315e4281c",
-    "build1": "https://github.com/coding-to-music/vue3_composition_api/blob/4c75c24553cc827a1e87f5004888452315e4281c",
-    "build4Name": "",
-    "build4": "https://github.com/coding-to-music/go-vue-thumbnail/blob/XXX/",
-    "build3Name": "main branch",
-    "build3": "https://github.com/coding-to-music/go-vue-thumbnail/blob/main/",
-    "build2Name": "not perfect",
-    "build2": "https://github.com/coding-to-music/go-vue-thumbnail/blob/e7eb02d8f2796819f4a4b4e08e8489793f8398d5/",
+    "build4Name": "webpack bundle analyzer",
+    "build4": "https://github.com/coding-to-music/vue3_composition_api/blob/861697cba24826560cee782b67203e569a3de05a/",
+    "build3Name": "final",
+    "build3": "https://github.com/coding-to-music/vue3_composition_api/blob/42162f5744e5ca15feb7a5afa431b9b418c4684d/",
+    "build2Name": "first",
+    "build2": "https://github.com/coding-to-music/vue3_composition_api/blob/d1de6581b730fb6a3492c0e1475421750ea13cbe/",
     "build1Name": "first commit",
-    "buildx": "https://github.com/coding-to-music/go-vue-thumbnail/blob/7f6feeae17f6d9f05f2023439f0bbab1550f8d53/",
-    "appName": "go-vue-snapshot",
-    "installDir": "/home/connorstom/aprojects/go-vue-snapshot",
-    "repoName": "github.com/coding-to-music/go-vue-thumbnail"
+    "build1": "https://github.com/coding-to-music/vue3_composition_api/blob/4c75c24553cc827a1e87f5004888452315e4281c/",
+    "installDir": "/home/connorstom/aprojects/vue_news",
+    "appName": "vue_news"
   },
-  "keywords": [],
-  "author": "Thomas Connors <connors.tom@gmail.com> (https://github.com/coding-to-music)",
-  "license": "MIT",
-  "dependencies": {
-    "chalk": "^2.4.2",
-    "gently-copy": "^3.2.0",
-    "live-server": "^1.2.1",
-    "onchange": "^7.1.0"
-  },
-  "devDependencies": {
-    "npm-run-all": "^4.1.5"
-  }
-}

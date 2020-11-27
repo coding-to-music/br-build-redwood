@@ -7,6 +7,15 @@ clone this directory
 npm install
 ```
 
+## performs the tasks usually done by a programmer at a keyboard
+
+run the script via 
+
+```bash
+
+npm run all-site
+```
+
 ## uses an example app built by following this article
 
 ## A full app using the Vue 3 Composition API
