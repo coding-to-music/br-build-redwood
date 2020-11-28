@@ -16,6 +16,21 @@ run the script via
 npm run all-site
 ```
 
+## after running the script, you can put the resulting directory into a repo
+
+```bash
+
+connorstom@penguin:~/aprojects/go-vue-snapshot$ git init .
+connorstom@penguin:~/aprojects/go-vue-snapshot$ git remote rm origin
+connorstom@penguin:~/aprojects/go-vue-snapshot$ git remote -v
+origin  git@github.com:coding-to-music/go-vue-snapshot.git (fetch)
+origin  git@github.com:coding-to-music/go-vue-snapshot.git (push)
+connorstom@penguin:~/aprojects/go-vue-snapshot$ git remote add origin git@github.com:coding-to-music/go-vue-snapshot2.git
+connorstom@penguin:~/aprojects/go-vue-snapshot$ git commit -m 'ver 5.3 update App.vue'
+connorstom@penguin:~/aprojects/go-vue-snapshot$ git push --set-upstream origin master
+connorstom@penguin:~/aprojects/go-vue-snapshot$ git push -u origin main
+```
+
 ## uses an example app built by following this article
 
 ## A full app using the Vue 3 Composition API

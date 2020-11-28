@@ -24,9 +24,18 @@
     "group0-part5-5.1": "cd $npm_package_config_installDir && vue create frontend",
     "group0-part5-5.2": "rm -rf $npm_package_config_installDir/frontend/assets",
     "group0-part5-5.3": "rm -rf $npm_package_config_installDir/frontend/components",
-    "group0-part5-5.4": "wget -nv -O $npm_package_config_installDir/frontend/App.vue $npm_package_config_raw3/frontend/App.vue",
-    "group0-part5-5.5": "cd $npm_package_config_installDir/frontend && yarn serve &",
-    "group0-part5-5.6": "echo end part 5",
+    "group0-part5-5.4": "rm -rf $npm_package_config_installDir/frontend/.git",
+
+    "group0-part5-5.5": "mv $npm_package_config_installDir/frontend/.gitignore $npm_package_config_installDir",
+    "group0-part5-5.6": "echo '/frontend/node_modules' >> $npm_package_config_installDir/.gitignore",
+
+    "group0-part5-5.7.0": "echo need correct blog commit for App.vue and index.html",
+    "group0-part5-5.7": "wget -nv -O $npm_package_config_installDir/frontend/App.vue $npm_package_config_app53/frontend/src/App.vue",
+    "group0-part5-5.8": "wget -nv -O $npm_package_config_installDir/frontend/App.vue $npm_package_config_index58/frontend/public/index.html",
+    "group0-part5-5.9": "cd $npm_package_config_installDir/frontend && yarn serve &",
+    "group0-part5-5.10": "echo $npm_package_config_installDir/frontend and then yarn serve",
+    "group0-part5-5.11": "echo end part 5",
+
 
     "groupx-part3-3.4": "mkdir -p $npm_package_config_installDir/src/",
     "groupx-part3-3.4.1": "wget -nv -O $npm_package_config_installDir/src/BlogRoll.vue $npm_package_config_raw1/main/server.go",
@@ -74,8 +83,10 @@
     "build5Name": "otherVueApp",
     "raw1": "https://raw.githubusercontent.com/coding-to-music/go-vue-thumbnail/",
     "raw2": "https://raw.githubusercontent.com/coding-to-music/vue3_composition_api/blob/4c75c24553cc827a1e87f5004888452315e4281c",
-
     "raw3": "https://raw.githubusercontent.com/coding-to-music/go-vue-thumbnail/e7eb02d8f2796819f4a4b4e08e8489793f8398d5",
+    "helloWorld": "https://raw.githubusercontent.com/coding-to-music/go-vue-snapshot2/cf30cee216a00b1038c6d3f0cba6f848a0a29c9c",
+    "app53": "https://raw.githubusercontent.com/coding-to-music/go-vue-snapshot2/cf30cee216a00b1038c6d3f0cba6f848a0a29c9c",
+    "index56": "https://raw.githubusercontent.com/coding-to-music/go-vue-snapshot2/cf30cee216a00b1038c6d3f0cba6f848a0a29c9c",
 
     "build5": "https://github.com/coding-to-music/vue3_composition_api/blob/4c75c24553cc827a1e87f5004888452315e4281c",
     "build1": "https://github.com/coding-to-music/vue3_composition_api/blob/4c75c24553cc827a1e87f5004888452315e4281c",
