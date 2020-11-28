@@ -14,14 +14,24 @@
     "group0-part3-3.2": "cd $npm_package_config_installDir && pwd && ls -lat",
     "group0-part3-3.3": "cd $npm_package_config_installDir && echo $npm_package_config_installDir",
     "group0-part3-3.4": "wget -nv -O $npm_package_config_installDir/server.go $npm_package_config_raw3/server.go",
+    "group0-part3-3.5": "cd $npm_package_config_installDir && go run $npm_package_config_installDir/server.go &",
+    "group0-part3-3.6": "echo end part 3",
+
+    "group0-part4-4.1": "wget -nv -O $npm_package_config_installDir/main.go $npm_package_config_raw3/main.go",
+    "group0-part4-4.2": "cd $npm_package_config_installDir && go run $npm_package_config_installDir/main.go &",
+    "group0-part4-4.3": "echo end part 4",
+
+    "group0-part5-5.1": "cd $npm_package_config_installDir && vue create frontend",
+    "group0-part5-5.2": "rm -rf $npm_package_config_installDir/frontend/assets",
+    "group0-part5-5.3": "rm -rf $npm_package_config_installDir/frontend/components",
+    "group0-part5-5.4": "wget -nv -O $npm_package_config_installDir/frontend/App.vue $npm_package_config_raw3/frontend/App.vue",
+    "group0-part5-5.5": "cd $npm_package_config_installDir/frontend && yarn serve &",
+    "group0-part5-5.6": "echo end part 5",
 
     "groupx-part3-3.4": "mkdir -p $npm_package_config_installDir/src/",
     "groupx-part3-3.4.1": "wget -nv -O $npm_package_config_installDir/src/BlogRoll.vue $npm_package_config_raw1/main/server.go",
     "groupx-part3-3.4.3": "wget -nv -O $npm_package_config_installDir/Post.vue $npm_package_config_build5/src/components/blog/Post.vue",    
-    "groupx-part3-3.4.4": "cd $npm_package_config_installDir && go run $npm_package_config_installDir/server.go",
 
-    "group1-part1-5.0": "rm -rf $npm_package_config_installDir/src/components/HelloWorld.vue",
-    "group1-part1-6.0": "rm -rf $npm_package_config_installDir/src/views/About.vue",
     "group1-part2-1.0": "echo begin part 2",
     "group1-part2-1.1": "cd $npm_package_config_installDir && pwd",
     "group1-part2-1.2": "rm -rf $npm_package_config_installDir/App.vue*",
