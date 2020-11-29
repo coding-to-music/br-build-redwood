@@ -13,7 +13,16 @@ run the script via
 
 ```bash
 
+
 npm run all-site
+
+cd aprojects/go-vue-snapshot
+go run main.go server.go
+
+cd aprojects/go-vue-snapshot/frontend
+yarn serve
+
+
 ```
 
 ## after running the script, you can put the resulting directory into a repo
