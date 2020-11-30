@@ -7,45 +7,48 @@
     "js-add": "node add.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "all-site": "npm-run-all group0*",
+    
+
     "group0-part1-1.0": "rm -rf $npm_package_config_installDir",
     "group0-part2-2.1": "cd .. && mkdir $npm_package_config_installDir",
     "group0-part2-2.2": "cd $npm_package_config_installDir && go mod init $npm_package_config_repoName",
-
-    "group0-part3-3.1.0": "echo about to: server.go",
+    "group0-part3-3.1.0": "echo $(tput setaf 1) about to: server.go $(tput sgr0) ",
     "group0-part3-3.1": "wget -nv -O $npm_package_config_installDir/server.go $npm_package_config_hello1/server.go",
-    "group0-part3-3.2": "cd $npm_package_config_installDir && pwd && ls -lat",
-    "group0-part3-3.3": "cd $npm_package_config_installDir && echo $npm_package_config_installDir",
+    "group0-part3-3.2": "cd $npm_package_config_installDir && echo $(tput setaf 4) && pwd && ls -lat && echo $(tput sgr0) ",
+    "group0-part3-3.3": "cd $npm_package_config_installDir && echo $(tput setaf 1) $npm_package_config_installDir $(tput sgr0) ",
     "group0-part3-3.5": "cd $npm_package_config_installDir && go run $npm_package_config_installDir/server.go",
-    "group0-part3-3.6": "echo end part 3 we just ran server.go THIS ALWAYS FAILS PORT 3000 IS IN USE",
-
-    "group0-part4-4.1.0": "echo about to: main.go",
+    "group0-part3-3.6": "echo $(tput setaf 2) end part 3 we just ran server.go will show up on the command line $(tput sgr0) ",
+    "group0-part4-4.1.0": "echo $(tput setaf 1) about to: main.go $(tput sgr0) ",
     "group0-part4-4.1": "wget -nv -O $npm_package_config_installDir/main.go $npm_package_config_hello1/main.go",
-    "group0-part4-4.3": "echo end part 4",
-
-    "group0-part5-5.1.0": "echo about to: vue create frontend",
+    "group0-part4-4.3": "echo $(tput setaf 2) end part 4 $(tput sgr0) ",
+    "group0-part5-5.1.0": "echo $(tput setaf 2) about to: vue create frontend $(tput sgr0) ",
     "group0-part5-5.1": "cd $npm_package_config_installDir && vue create frontend",
     "group0-part5-5.2": "rm -rf $npm_package_config_installDir/frontend/assets",
     "group0-part5-5.3": "rm -rf $npm_package_config_installDir/frontend/components",
     "group0-part5-5.4": "rm -rf $npm_package_config_installDir/frontend/.git",
-
-    "group0-part5-5.5.0": "echo about to: .gitignore",
+    "group0-part5-5.5.0": "echo $(tput setaf 2) about to: .gitignore $(tput sgr0) ",
     "group0-part5-5.5": "mv $npm_package_config_installDir/frontend/.gitignore $npm_package_config_installDir",
-    "group0-part5-5.6": "echo '/frontend/node_modules' >> $npm_package_config_installDir/.gitignore",
-
-    "group0-part5-5.7.0": "echo about to: App.vue",
+    "group0-part5-5.6": "echo $(tput setaf 2) '/frontend/node_modules' >> $npm_package_config_installDir/.gitignore $(tput sgr0) ",
+    "group0-part5-5.7.0": "echo $(tput setaf 2) about to: App.vue $(tput sgr0) ",
     "group0-part5-5.7": "wget -nv -O $npm_package_config_installDir/frontend/src/App.vue $npm_package_config_hello1/App.vue",
     "group0-part5-5.9": "wget -nv -O $npm_package_config_installDir/frontend/public/index.html $npm_package_config_hello1/index.html",
-    "group0-part5-5.11": "echo $npm_package_config_installDir/frontend and then yarn serve NEED BETTER OPENING BROWSER INCREMENTING PORT 8080",
-    "group0-part5-5.12": "echo end hello world part 5 - check localhost:3000 for go server and localhost:8080 for vue server",
-    
-
+    "group0-part5-5.11": "echo $(tput setaf 2) $npm_package_config_installDir/frontend and then yarn serve NEED BETTER OPENING BROWSER INCREMENTING PORT 8080 $(tput sgr0) ",
+    "group0-part5-5.12": "echo $(tput setaf 2) end hello world part 5 - check localhost:3000 for go server and localhost:8080 for vue server $(tput sgr0) ",
+    "xomit": "THIS ALWAYS FAILS PORT 3000 IS IN USE",
     "xgroup0-part3-3.4": "wget -nv -O $npm_package_config_installDir/server.go OMIT DUPLICATE $npm_package_config_hello1/server.go",
     "xgroup0-part4-4.2": "cd $npm_package_config_installDir OMIT OMIT OMIT && go run $npm_package_config_installDir/main.go",
     "xgroup0-part5-5.8": "wget -nv -O $npm_package_config_installDir/frontend/App.vue OMIT LINE $npm_package_config_hello1/App.vue",
     "xgroup0-part5-5.10": "cd $npm_package_config_installDir/frontend && yarn serve OMIT THIS",
-
-
-    "groupx-last": "echo that is all"    
+    "group9.0": "echo $(tput setaf 0) setaf 0 is black $(tput sgr0) ",
+    "group9.1": "echo $(tput setaf 1) setaf 1 is red $(tput sgr0) ",
+    "group9.2": "echo $(tput setaf 2) setaf 2 is green $(tput sgr0) ",
+    "group9.3": "echo $(tput setaf 3) setaf 3 is yellow $(tput sgr0) ",
+    "group9.4": "echo $(tput setaf 4) setaf 4 is blue $(tput sgr0) ",
+    "group9.5": "echo $(tput setaf 5) setaf 5 is magenta $(tput sgr0) ",
+    "group9.6": "echo $(tput setaf 6) setaf 6 is cyan $(tput sgr0) ",
+    "group9.7": "echo $(tput setaf 7) setaf 7 is white $(tput sgr0) ",
+    "group9.8": "echo $(tput setaf 1) setaf 1 is red $(tput setaf 2) setaf 1 is green  $(tput sgr0) ",
+    "groupx-last": "echo $(tput setaf 1) that is all"
   },
   "config": {
     "hello1": "https://raw.githubusercontent.com/coding-to-music/go-vue-sourcefiles/main/hello-world",
